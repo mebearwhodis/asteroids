@@ -45,7 +45,7 @@ class Player(CircleShape):
 
     def shoot(self):
         if self.shoot_cooldown > 0:
-            pass
+            return
         else:
             self.shoot_cooldown = PLAYER_SHOOT_COOLDOWN
             shot = Shot(self.position.x, self.position.y)
